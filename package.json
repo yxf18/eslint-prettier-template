@@ -1,0 +1,37 @@
+{
+  "name": "eslint-prettier-template",
+  "version": "0.0.0",
+  "description": "",
+  "scripts": {
+    "lint-staged": "lint-staged",
+    "prepare": "husky install",
+    "commit": "git-cz"
+  },
+  "lint-staged": {
+    "*.{js,ts,vue,jsx,tsx}": [
+      "eslint --cache --fix"
+    ],
+    "*.md": [
+      "prettier --write"
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/config-conventional": "^17.6.5",
+    "@typescript-eslint/eslint-plugin": "^5.60.0",
+    "@typescript-eslint/parser": "^5.60.0",
+    "commitizen": "^4.3.0",
+    "commitlint": "^17.6.5",
+    "commitlint-config-cz": "^0.13.3",
+    "cz-conventional-changelog": "^3.3.0",
+    "cz-customizable": "^7.0.0",
+    "eslint": "^8.43.0",
+    "eslint-plugin-react": "^7.32.2",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    }
+  }
+}
