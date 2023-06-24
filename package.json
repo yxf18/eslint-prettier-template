@@ -10,9 +10,6 @@
   "lint-staged": {
     "*.{js,ts,vue,jsx,tsx}": [
       "eslint --cache --fix"
-    ],
-    "*.md": [
-      "prettier --write"
     ]
   },
   "devDependencies": {
