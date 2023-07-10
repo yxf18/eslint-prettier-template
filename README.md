@@ -153,7 +153,7 @@ npm i -D commitlint-config-cz  cz-customizable
 ```
 5. 创建 commitlint.config.js 配置文件
 ```shell
-// extends: ['config-conventional']
+// extends: ['@commitlint/config-conventional'] 默认配置项
 echo "module.exports = {extends: ['cz']}" > commitlint.config.js
 ```
 
